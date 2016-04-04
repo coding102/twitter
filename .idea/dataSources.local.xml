@@ -4,5 +4,14 @@
     <data-source name="PostgreSQL - postgres@localhost" uuid="f553e93b-3738-4c02-9b92-57c3f6c212da">
       <secret-storage>master_key</secret-storage>
     </data-source>
+    <data-source name="Rails twitter-clone: test" uuid="1b4e025a-b704-459f-83f4-09b1c15a6605" />
+    <data-source name="Rails twitter-clone: development" uuid="e8db8ec5-622c-47a0-ae96-c4a21856b70f">
+      <schema-pattern>twitter-clone_development.*</schema-pattern>
+      <default-schemas>twitter-clone_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails twitter-clone: production" uuid="5fa158c2-5f2b-4d4b-bf87-5fc00cc8b577">
+      <user-name>twitter-clone</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffedffddfe3dffedffedfefdff8df87dfe9dfe6dfe5dfe4dfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
   </component>
 </project>
