@@ -38,53 +38,53 @@
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>1042</introspection-state-number>
-        <introspection-timestamp>2016-04-06.20:26:32.419</introspection-timestamp>
+        <introspection-state-number>1058</introspection-state-number>
+        <introspection-timestamp>2016-04-09.16:17:37.031</introspection-timestamp>
       </schema>
       <schema id="3" parent="1" name="pg_catalog">
         <object-id>11</object-id>
         <comment>system catalog schema</comment>
         <introspection-state-number>997</introspection-state-number>
-        <introspection-timestamp>2016-04-06.20:26:32.853</introspection-timestamp>
+        <introspection-timestamp>2016-04-09.16:17:37.446</introspection-timestamp>
       </schema>
       <schema id="4" parent="1" name="information_schema">
         <object-id>11853</object-id>
         <introspection-state-number>988</introspection-state-number>
-        <introspection-timestamp>2016-04-06.20:26:34.704</introspection-timestamp>
+        <introspection-timestamp>2016-04-09.16:17:40.474</introspection-timestamp>
       </schema>
       <schema id="5" parent="1" name="pg_toast">
         <object-id>99</object-id>
         <comment>reserved schema for TOAST tables</comment>
-        <introspection-state-number>1042</introspection-state-number>
-        <introspection-timestamp>2016-04-06.20:26:34.914</introspection-timestamp>
+        <introspection-state-number>1058</introspection-state-number>
+        <introspection-timestamp>2016-04-09.16:17:40.807</introspection-timestamp>
       </schema>
       <schema id="6" parent="1" name="pg_toast_temp_1">
         <object-id>11321</object-id>
-        <introspection-timestamp>2016-04-06.20:26:35.019</introspection-timestamp>
+        <introspection-timestamp>2016-04-09.16:17:41.095</introspection-timestamp>
       </schema>
       <schema id="7" parent="1" name="pg_temp_1">
         <object-id>11320</object-id>
-        <introspection-timestamp>2016-04-06.20:26:35.111</introspection-timestamp>
+        <introspection-timestamp>2016-04-09.16:17:41.328</introspection-timestamp>
       </schema>
       <sequence id="8" parent="2" name="tweets_id_seq">
-        <object-id>16451</object-id>
-        <state-number>1042</state-number>
+        <object-id>16487</object-id>
+        <state-number>1058</state-number>
       </sequence>
       <sequence id="9" parent="2" name="users_id_seq">
-        <object-id>16435</object-id>
-        <state-number>1028</state-number>
+        <object-id>16471</object-id>
+        <state-number>1056</state-number>
       </sequence>
       <table id="10" parent="2" name="schema_migrations">
-        <object-id>16428</object-id>
-        <state-number>1026</state-number>
+        <object-id>16464</object-id>
+        <state-number>1054</state-number>
       </table>
       <table id="11" parent="2" name="tweets">
-        <object-id>16453</object-id>
-        <state-number>1042</state-number>
+        <object-id>16489</object-id>
+        <state-number>1058</state-number>
       </table>
       <table id="12" parent="2" name="users">
-        <object-id>16437</object-id>
-        <state-number>1033</state-number>
+        <object-id>16473</object-id>
+        <state-number>1057</state-number>
       </table>
       <table id="13" parent="3" name="pg_aggregate">
         <object-id>2600</object-id>
@@ -20379,42 +20379,42 @@
         <routine-kind>FUNCTION</routine-kind>
       </routine>
       <column id="3633" parent="10" name="version">
-        <state-number>1026</state-number>
+        <state-number>1054</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
       </column>
       <index id="3634" parent="10" name="unique_schema_migrations">
-        <object-id>16434</object-id>
+        <object-id>16470</object-id>
         <columns>version</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <column id="3635" parent="11" name="id">
-        <state-number>1042</state-number>
+        <state-number>1058</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;tweets_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3636" parent="11" name="user_id">
-        <state-number>1042</state-number>
+        <state-number>1058</state-number>
         <data-type>integer</data-type>
       </column>
       <column id="3637" parent="11" name="body">
-        <state-number>1042</state-number>
+        <state-number>1058</state-number>
         <data-type>text</data-type>
       </column>
       <column id="3638" parent="11" name="created_at">
-        <state-number>1042</state-number>
+        <state-number>1058</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="3639" parent="11" name="updated_at">
-        <state-number>1042</state-number>
+        <state-number>1058</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <index id="3640" parent="11" name="tweets_pkey">
-        <object-id>16460</object-id>
+        <object-id>16496</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
@@ -20425,89 +20425,89 @@
         <primary>1</primary>
       </key>
       <column id="3642" parent="12" name="id">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>nextval(&apos;users_id_seq&apos;::regclass)</default-expression>
       </column>
       <column id="3643" parent="12" name="email">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
         <default-expression>&apos;&apos;::character varying</default-expression>
       </column>
       <column id="3644" parent="12" name="encrypted_password">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar</data-type>
         <default-expression>&apos;&apos;::character varying</default-expression>
       </column>
       <column id="3645" parent="12" name="reset_password_token">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="3646" parent="12" name="reset_password_sent_at">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3647" parent="12" name="remember_created_at">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3648" parent="12" name="sign_in_count">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
         <default-expression>0</default-expression>
       </column>
       <column id="3649" parent="12" name="current_sign_in_at">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3650" parent="12" name="last_sign_in_at">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>timestamp</data-type>
       </column>
       <column id="3651" parent="12" name="current_sign_in_ip">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>inet</data-type>
       </column>
       <column id="3652" parent="12" name="last_sign_in_ip">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <data-type>inet</data-type>
       </column>
       <column id="3653" parent="12" name="created_at">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="3654" parent="12" name="updated_at">
-        <state-number>1028</state-number>
+        <state-number>1056</state-number>
         <mandatory>1</mandatory>
         <data-type>timestamp</data-type>
       </column>
       <column id="3655" parent="12" name="first_name">
-        <state-number>1033</state-number>
+        <state-number>1057</state-number>
         <data-type>varchar</data-type>
       </column>
       <column id="3656" parent="12" name="last_name">
-        <state-number>1033</state-number>
+        <state-number>1057</state-number>
         <data-type>varchar</data-type>
       </column>
       <index id="3657" parent="12" name="users_pkey">
-        <object-id>16447</object-id>
+        <object-id>16483</object-id>
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <index id="3658" parent="12" name="index_users_on_email">
-        <object-id>16449</object-id>
+        <object-id>16485</object-id>
         <columns>email</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
       <index id="3659" parent="12" name="index_users_on_reset_password_token">
-        <object-id>16450</object-id>
+        <object-id>16486</object-id>
         <columns>reset_password_token</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>

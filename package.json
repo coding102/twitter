@@ -20,13 +20,14 @@
   },
   "homepage": "https://github.com/coding102/twitter#readme",
   "dependencies": {
-    "babel-loader": "^6.2.4"
+    "babel-loader": "^6.2.4",
+    "events": "^1.1.0",
+    "flux": "^2.1.1"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
-
     "babel-core": "^6.7.4",
     "babel-loader": "^6.2.4"
   }
